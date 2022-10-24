@@ -1,10 +1,10 @@
 import image from './accets/image.png'
-import { Block } from './classes/blocks'
+import { TextBlock, TitleBlock, ColumsBlock, ImageBlock } from './classes/blocks'
 
 const text = `Меня зовут Нефедов Павел. Я работаю официантом в отеле, живу в Санкт-Петербурге`
 
  export const model = [
-   new Block("title", "Конструктор сайтов на чистом JavaScript", {
+   new TitleBlock("Конструктор сайтов на чистом JavaScript", {
      tag: "h2",
      styles: {
        background: " linear-gradient(to top right, #000099 0%, #ff0000 100%)",
@@ -13,7 +13,7 @@ const text = `Меня зовут Нефедов Павел. Я работаю �
        padding: "1.5rem",
      },
    }),
-   new Block("text", text, {
+   new TextBlock(text, {
      tag: "h1",
      styles: {
        background: "linear-gradient(to right, #ff0099, #493240)",
@@ -23,8 +23,7 @@ const text = `Меня зовут Нефедов Павел. Я работаю �
      },
    }),
 
-   new Block(
-     "colums",
+   new ColumsBlock(
      ["Колонка", "Колонка", "Все еще колонка", "И это колонка"],
      {
        tag: "p",
@@ -38,7 +37,7 @@ const text = `Меня зовут Нефедов Павел. Я работаю �
      }
    ),
 
-   new Block('image', image, {
+   new ImageBlock(image, {
      styles: {
        padding: "2 rem 0",
        display: "flex",
