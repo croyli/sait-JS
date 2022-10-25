@@ -1,4 +1,4 @@
-import image from './accets/image.png'
+import image from './accets/image.jpg'
 import { TextBlock, TitleBlock, ColumsBlock, ImageBlock } from './classes/blocks'
 
 const text = `Меня зовут Нефедов Павел. Я работаю официантом в отеле, живу в Санкт-Петербурге`
@@ -13,6 +13,7 @@ const text = `Меня зовут Нефедов Павел. Я работаю �
        padding: "1.5rem",
      },
    }),
+
    new TextBlock(text, {
      tag: "h1",
      styles: {

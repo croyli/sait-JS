@@ -2,7 +2,6 @@ import { col, css, row } from '../utils'
 
 class Block {
   constructor(value, options) {
-    this.type = type;
     this.value = value;
     this.options = options;
   }
@@ -50,7 +49,7 @@ export class ColumsBlock extends Block {
 
 export class TextBlock extends Block {
   constructor(value, options) {
-    super("text", value, options);
+    super(value, options);
   }
 
   toHtml() {
